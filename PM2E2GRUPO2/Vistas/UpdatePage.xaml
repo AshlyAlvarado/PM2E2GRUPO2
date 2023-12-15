@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
+             xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
+             x:Class="PM2E2GRUPO2.Vistas.UpdatePage"
+             Title="Actualizar Registro">
+
+    <VerticalStackLayout Padding="10" Spacing="10" Grid.Row="0">
+        <Image Source="{Binding Detalle.Urlfoto}"
+               Aspect="AspectFit"
+               HeightRequest="200"/>
+        <Label Text="{Binding Detalle.Id}"/>
+        <Entry x:Name="idText" Text="{Binding Detalle.Id}" />
+        <Label Text="Descripcion"/>
+        <Entry x:Name="desc" Text="{Binding Detalle.descripcion}" />
+        <Label Text="Latitud"/>
+        <Entry x:Name="lat" Text="{Binding Detalle.latitud}" />
+        <Label x:Name="lot" Text="Longitud"/>
+        <Entry Text="{Binding Detalle.longitud}" />
+    </VerticalStackLayout>
+</ContentPage>
